@@ -30,29 +30,51 @@
 //   return age;
 // }
 
-//Function declaration
-function calAge1(birthYear) {
-  return 2037 - birthYear; // we can just return the result
-}
+// //Function declaration
+// function calAge1(birthYear) {
+//   return 2037 - birthYear; // we can just return the result
+// }
 
-// THAT IS A GENERIC FUNCTION THAT WILL WORK FOR ANY BIRTHYEAD WE GUVE IT
-
-const age1 = calAge1(1991);
-
-//THE PARAMETER IS THE PLACEHOLDER (birthYear) WHILE THE ARGUMENT IS THE ACTUAL VALUE THAT WE USE TO FILL IN THE PLACEHOLDER THAT IS THE PARAMETER E.G(1991);
-// SO WE JUST CREATED A FUNCTION DECLARATION, NOW LERS CREATE A  FUNCTION EXPRESSION OR ANONYMOUS FUNCTION WHICH IS THE OTHER TYPE OF FUNCTION!!
-// function expression
-const calAge2 = function (birthYear) {
-  return 2037 - birthYear;
-}; // the function is an expression and expressions produce values. so we assigned the expression to a variable and the variable will hold the function value basically. functions are values in jS and if it is a value, we can store it in variables
-
-const age2 = calAge2(1991);
-console.log(age1, age2);
-
-// BIG DIFF BETWEEN FUNCTION DECLASRATIONS AND FUNCTION EXPRESSIONS?? IT IS THAT WE CAN CALL FUNCTION DECLARATIONS BEFORE THEY ARE DEFINED IN THE CODE
+// // THAT IS A GENERIC FUNCTION THAT WILL WORK FOR ANY BIRTHYEAD WE GUVE IT
 
 // const age1 = calAge1(1991);
 
-// function calAge1(birthYear) {
+// //THE PARAMETER IS THE PLACEHOLDER (birthYear) WHILE THE ARGUMENT IS THE ACTUAL VALUE THAT WE USE TO FILL IN THE PLACEHOLDER THAT IS THE PARAMETER E.G(1991);
+// // SO WE JUST CREATED A FUNCTION DECLARATION, NOW LERS CREATE A  FUNCTION EXPRESSION OR ANONYMOUS FUNCTION WHICH IS THE OTHER TYPE OF FUNCTION!!
+
+// // function expression
+// const calAge2 = function (birthYear) {
 //   return 2037 - birthYear;
-// }  // WHICH WILL NOT WORK IN FUNCTION EXPRESSIONS
+// }; // the function is an expression and expressions produce values. so we assigned the expression to a variable and the variable will hold the function value basically. functions are values in jS and if it is a value, we can store it in variables
+
+// const age2 = calAge2(1991);
+// console.log(age1, age2);
+
+// // BIG DIFF BETWEEN FUNCTION DECLASRATIONS AND FUNCTION EXPRESSIONS?? IT IS THAT WE CAN CALL FUNCTION DECLARATIONS BEFORE THEY ARE DEFINED IN THE CODE
+
+// // const age1 = calAge1(1991);
+
+// // function calAge1(birthYear) {
+// //   return 2037 - birthYear;
+// // }  // WHICH WILL NOT WORK IN FUNCTION EXPRESSIONS
+
+// function expression
+const calAge2 = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+// ARROW FUNCTION. ANOTHER TYPE OF FUNCTION. A SPECIAL FORM OF FUNCTION EXPRESSION THAT IS SHORTER AND THEREFORE FASTER TO WRITE
+const calAge3 = (birthYear) => 2037 - birthYear;
+const age3 = calAge3(1991);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+  const age = 2037 - birthYear;
+  const retirement = 65 - age;
+  return `${firstName} retires in ${retirement} years`; //only ommit the return if it is one line of function but when we have more, we need to use the return
+};
+
+console.log(yearsUntilRetirement(1991, "Ehi"));
+console.log(yearsUntilRetirement(2000, "Nome"));
+
+//as the lines of codes become more, it gets complex and we loose advantage of using an arrrow function.
