@@ -33,21 +33,33 @@ store the results into variables, and log them to the console
 the same populations)
 */
 //FUNCTION DECLARATION
-function percentageOfWorld1(population) {
-  return (population / 7900) * 100;
-}
+// function percentageOfWorld1(population) {
+//   return (population / 7900) * 100;
+// }
 
-const percentageOfFinland = percentageOfWorld1(6);
-const percentageOfArgentina = percentageOfWorld1(45.6);
-const percentageOfEgypt = percentageOfWorld1(101.3);
-console.log(percentageOfFinland, percentageOfArgentina, percentageOfEgypt);
+// const percentageOfFinland = percentageOfWorld1(6);
+// const percentageOfArgentina = percentageOfWorld1(45.6);
+// const percentageOfEgypt = percentageOfWorld1(101.3);
+// console.log(percentageOfFinland, percentageOfArgentina, percentageOfEgypt);
 
-// FUNCTION EXPRESSION
-const percentageOfWorld2 = function (population) {
-  return (population / 7900) * 100;
-};
+// // FUNCTION EXPRESSION
+// const percentageOfWorld2 = function (population) {
+//   return (population / 7900) * 100;
+// };
 
-const percentageOfJapan = percentageOfWorld1(127.1);
-const percentageOfMexico = percentageOfWorld1(127.5);
-const percentageOfSweden = percentageOfWorld1(10.3);
-console.log(percentageOfJapan, percentageOfMexico, percentageOfSweden);
+// const percentageOfJapan = percentageOfWorld1(127.1);
+// const percentageOfMexico = percentageOfWorld1(127.5);
+// const percentageOfSweden = percentageOfWorld1(10.3);
+// console.log(percentageOfJapan, percentageOfMexico, percentageOfSweden);
+
+/*ASSIGNMENT 3. Recreate the last assignment, but this time create an arrow function called
+"percentageOfWorld3"; */
+
+//ARROW FUNCTION
+const percentageOfWorld3 = (population) => (population / 7900) * 100;
+
+const percentageOfUk = percentageOfWorld3(67.1);
+const percentageOfUkraine = percentageOfWorld3(41.9);
+const percentageOfUnitedStates = percentageOfWorld3(333.1);
+
+console.log(percentageOfUk, percentageOfUkraine, percentageOfUnitedStates);
