@@ -53,7 +53,7 @@ the same populations)
 // console.log(percentageOfJapan, percentageOfMexico, percentageOfSweden);
 
 /*ASSIGNMENT 3. Recreate the last assignment, but this time create an arrow function called
-"percentageOfWorld3"; */
+"percentageOfWorld3"; 
 
 //ARROW FUNCTION
 const percentageOfWorld3 = (population) => (population / 7900) * 100;
@@ -63,3 +63,50 @@ const percentageOfUkraine = percentageOfWorld3(41.9);
 const percentageOfUnitedStates = percentageOfWorld3(333.1);
 
 console.log(percentageOfUk, percentageOfUkraine, percentageOfUnitedStates);
+*/
+
+/*ASSIGNMENT 4. FUNCTIONS CALLING OTHER FUNCTIONS.
+1.Create a function called 'describePopulation'. Use the function type you
+like the most. This function takes in two arguments: 'country' and
+'population', and returns a string like this: 'China has 1441 million people,
+which is about 18.2% of the world.'
+2. To calculate the percentage, 'describePopulation' call the
+'percentageOfWorld1' you created earlier
+3. Call 'describePopulation' with data for 3 countries of your choice */
+
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
+
+//function declaration
+function describePopulation(country, population) {
+  const percentageOfCountry = percentageOfWorld1(population);
+  const decription = `${country} has ${population} million people, which is about ${percentageOfCountry}% of the world`;
+  console.log(decription);
+}
+
+describePopulation("Brazil", 212.2);
+describePopulation("Argentina", 25.7);
+describePopulation("Canada", 37.7);
+
+//funcion expression
+// const describePopulation = function (country, population) {
+//   const percentageOfCountry = percentageOfWorld1(population);
+//   return `${country} has ${population} million people, which is about ${percentageOfCountry}% of the world`;
+// };
+
+// console.log(describePopulation("Brazil", 212.2));
+// console.log(describePopulation("Argentina", 25.7));
+// console.log(describePopulation("Canada", 37.7));
+
+// arrow function
+// const describePopulation = (country, population) => {
+//   const percentageOfCountry = percentageOfWorld1(population);
+//   return `${country} has ${population} million people, which is about ${percentageOfCountry}% of the world`;
+// };
+
+// const percBrazil = describePopulation("Brazil", 212.2);
+// const percArgentina = describePopulation("Argentina", 25.7);
+// const percCanada = describePopulation("Canada", 37.7);
+
+// console.log(percBrazil, percArgentina, percCanada);
