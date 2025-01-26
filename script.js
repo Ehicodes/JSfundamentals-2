@@ -59,22 +59,38 @@
 // // }  // WHICH WILL NOT WORK IN FUNCTION EXPRESSIONS
 
 // function expression
-const calAge2 = function (birthYear) {
-  return 2037 - birthYear;
-};
+// const calAge2 = function (birthYear) {
+//   return 2037 - birthYear;
+// };
 
-// ARROW FUNCTION. ANOTHER TYPE OF FUNCTION. A SPECIAL FORM OF FUNCTION EXPRESSION THAT IS SHORTER AND THEREFORE FASTER TO WRITE
-const calAge3 = (birthYear) => 2037 - birthYear;
-const age3 = calAge3(1991);
-console.log(age3);
+// // ARROW FUNCTION. ANOTHER TYPE OF FUNCTION. A SPECIAL FORM OF FUNCTION EXPRESSION THAT IS SHORTER AND THEREFORE FASTER TO WRITE
+// const calAge3 = (birthYear) => 2037 - birthYear;
+// const age3 = calAge3(1991);
+// console.log(age3);
 
-const yearsUntilRetirement = (birthYear, firstName) => {
-  const age = 2037 - birthYear;
-  const retirement = 65 - age;
-  return `${firstName} retires in ${retirement} years`; //only ommit the return if it is one line of function but when we have more, we need to use the return
-};
+// const yearsUntilRetirement = (birthYear, firstName) => {
+//   const age = 2037 - birthYear;
+//   const retirement = 65 - age;
+//   return `${firstName} retires in ${retirement} years`; //only ommit the return if it is one line of function but when we have more, we need to use the return
+// };
 
-console.log(yearsUntilRetirement(1991, "Ehi"));
-console.log(yearsUntilRetirement(2000, "Nome"));
+// console.log(yearsUntilRetirement(1991, "Ehi"));
+// console.log(yearsUntilRetirement(2000, "Nome"));
 
 //as the lines of codes become more, it gets complex and we loose advantage of using an arrrow function.
+
+//FUNCTIONS CALLING OTHER FUNCTIONS
+
+function cutfruitPieces(fruit) {
+  return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutfruitPieces(apples);
+  const orangePieces = cutfruitPieces(oranges);
+
+  const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges.`;
+  return juice;
+}
+
+console.log(fruitProcessor(2, 3));
