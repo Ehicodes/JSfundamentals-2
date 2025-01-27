@@ -57,6 +57,6 @@ const checkWinner = function (dolphinsAvg, koalasAvg) {
 };
 
 const winner = checkWinner(dolphinsAvg, koalasAvg);
-// const winner2 = checkWinner(dolphinsAvg2, koalasAvg2);
+const winner2 = checkWinner(dolphinsAvg2, koalasAvg2);
 
-console.log(winner);
+console.log(winner, winner2);
