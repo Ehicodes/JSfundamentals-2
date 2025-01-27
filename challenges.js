@@ -30,7 +30,7 @@ const calcAverage = (score1, score2, score3) => {
   return average;
 };
 
-const dolphinsAvg = calcAverage(44, 500, 71); //46
+const dolphinsAvg = calcAverage(44, 23, 71); //46
 const koalasAvg = calcAverage(65, 54, 49); //56
 
 console.log(dolphinsAvg, koalasAvg);
