@@ -24,12 +24,27 @@ Hints:
 Apply this to the team's average scores 😉
 GOOD */
 
+//FUNCTION TO CALCULATE AVERAGE SCORE OF BOTH TEAMS.
 const calcAverage = (score1, score2, score3) => {
   const average = (score1 + score2 + score3) / 3;
   return average;
 };
 
-const dolphinsAvg = calcAverage(44, 23, 71);
-const koalasAvg = calcAverage(65, 54, 49);
+const dolphinsAvg = calcAverage(44, 500, 71); //46
+const koalasAvg = calcAverage(65, 54, 49); //56
 
 console.log(dolphinsAvg, koalasAvg);
+
+const checkWinner1 = function (dolphinsAvg, koalasAvg) {
+  if (dolphinsAvg >= 2 * koalasAvg) {
+    console.log(`Dolphins win (${dolphinsAvg} vs. ${koalasAvg})`);
+  } else if (koalasAvg >= 2 * dolphinsAvg) {
+    console.log(`Koalas win (${koalasAvg} vs. ${dolphinsAvg})`);
+  } else {
+    console.log("No team wins!");
+  }
+};
+
+const winner = checkWinner1(dolphinsAvg, koalasAvg);
+
+console.log(winner);
