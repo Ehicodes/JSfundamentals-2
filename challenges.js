@@ -35,7 +35,18 @@ const koalasAvg = calcAverage(65, 54, 49); //56
 
 console.log(dolphinsAvg, koalasAvg);
 
-const checkWinner1 = function (dolphinsAvg, koalasAvg) {
+//DATA 2
+const calcAverage2 = function (dolphinsAvg, koalasAvg) {
+  const average2 = calcAverage(score1, score2, score3);
+};
+
+const dolphinsAvg2 = calcAverage(85, 54, 41); //60
+const koalasAvg2 = calcAverage(23, 34, 27); //28
+
+console.log(dolphinsAvg2, koalasAvg2);
+
+//CHECKWINNER FUNCTION
+const checkWinner = function (dolphinsAvg, koalasAvg) {
   if (dolphinsAvg >= 2 * koalasAvg) {
     console.log(`Dolphins win (${dolphinsAvg} vs. ${koalasAvg})`);
   } else if (koalasAvg >= 2 * dolphinsAvg) {
@@ -45,6 +56,7 @@ const checkWinner1 = function (dolphinsAvg, koalasAvg) {
   }
 };
 
-const winner = checkWinner1(dolphinsAvg, koalasAvg);
+const winner = checkWinner(dolphinsAvg, koalasAvg);
+// const winner2 = checkWinner(dolphinsAvg2, koalasAvg2);
 
 console.log(winner);
