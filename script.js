@@ -120,22 +120,42 @@
 // const friend2 = "Steven";
 // const friend3 = "Peter";
 
-const friends = ["Michael", "Steven", "Peter"];
-console.log(friends);
+// const friends = ["Michael", "Steven", "Peter"];
+// console.log(friends);
 
-const years = new Array(1991, 2006, 2020);
-console.log(years);
+// const y = new Array(1991, 2006, 2020);
+// console.log(years);
 
-console.log(friends[0]);
-console.log(friends[2]);
+// console.log(friends[0]);
+// console.log(friends[2]);
 
-console.log(friends.length);
+// console.log(friends.length);
 
-console.log(friends[friends.length - 1]);
+// console.log(friends[friends.length - 1]);
 
-friends[2] = "jay";
-console.log(friends);
+// friends[2] = "jay";
+// console.log(friends);
 
-const firstName = "Ehi";
-const ehi = [firstName, "Osaigbovo", 2024 - 2006, "student", friends];
-console.log(ehi);
+// const firstName = "Ehi";
+// const ehi = [firstName, "Osaigbovo", 2024 - 2006, "student", friends];
+// console.log(ehi);
+
+// ARRAY EXERCISE
+const calAge = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const years = [1990, 1967, 2002, 2010, 2018];
+const age1 = calAge(years[0]);
+const age2 = calAge(years[1]);
+const age3 = calAge(years[years.length - 1]);
+
+console.log(age1, age2, age3);
+
+const ages = [
+  calAge(years[0]),
+  calAge(years[1]),
+  calAge(years[years.length - 1]),
+];
+
+console.log(ages);
