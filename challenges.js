@@ -25,6 +25,7 @@ Apply this to the team's average scores 😉
 GOOD */
 
 //FUNCTION TO CALCULATE AVERAGE SCORE OF BOTH TEAMS.
+// DATA 1
 const calcAverage = (score1, score2, score3) => {
   const average = (score1 + score2 + score3) / 3;
   return average;
@@ -36,7 +37,7 @@ const koalasAvg = calcAverage(65, 54, 49); //56
 console.log(dolphinsAvg, koalasAvg);
 
 //DATA 2
-const calcAverage2 = function (dolphinsAvg, koalasAvg) {
+const calcAverage2 = function (dolphinsAvg2, koalasAvg2) {
   const average2 = calcAverage(score1, score2, score3);
 };
 
@@ -56,7 +57,33 @@ const checkWinner = function (dolphinsAvg, koalasAvg) {
   }
 };
 
-const winner = checkWinner(dolphinsAvg, koalasAvg);
-const winner2 = checkWinner(dolphinsAvg2, koalasAvg2);
+checkWinner(dolphinsAvg, koalasAvg);
+checkWinner(dolphinsAvg2, koalasAvg2);
 
-console.log(winner, winner2);
+// TUTOR CODE
+// const calcAverage = (a, b, c) => (a + b + c) / 3;
+// console.log(calcAverage(3, 4, 5)); //testing purposes
+
+// // Test 1
+// let scoreDolphins = calcAverage(44, 23, 71);
+// let scoreKoalas = calcAverage(65, 54, 49);
+// console.log(scoreDolphins, scoreKoalas);
+
+// const checkWinner = function (avgDolhins, avgKoalas) {
+//   if (avgDolhins >= 2 * avgKoalas) {
+//     console.log(`Dolphins win the trophy(${avgDolhins} vs. ${avgKoalas})`);
+//   } else if (avgKoalas >= 2 * avgDolhins) {
+//     console.log(`Koalas win the trophy (${avgKoalas} vs. ${avgDolhins})`);
+//   } else {
+//     console.log(`No team wins..`);
+//   }
+// };
+
+// checkWinner(scoreDolphins, scoreKoalas);
+
+// //  test 2
+// scoreDolphins = calcAverage(85, 54, 41);
+// scoreKoalas = calcAverage(23, 34, 27);
+
+// console.log(scoreDolphins, scoreKoalas);
+// checkWinner(scoreDolphins, scoreKoalas);
