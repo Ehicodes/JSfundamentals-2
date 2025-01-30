@@ -120,11 +120,7 @@ variable called 'populations'
 world population for these 4 population values. Use the function
 'percentageOfWorld1' that you created earlier to compute the 4
 percentage values*/
-
+// TASK 1
 const populations = [212.2, 25.7, 37.7, 67.1];
-
+//TASK 2
 console.log(populations.length === 4);
-
-function percentageOfWorld1(population) {
-  return (population / 7900) * 100;
-}
