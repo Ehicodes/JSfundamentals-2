@@ -122,5 +122,30 @@ world population for these 4 population values. Use the function
 percentage values*/
 // TASK 1
 const populations = [212.2, 25.7, 37.7, 67.1];
+
 //TASK 2
 console.log(populations.length === 4);
+
+//TASK 3
+
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
+
+const population1 = percentageOfWorld1(populations[0]);
+
+const population2 = percentageOfWorld1(populations[1]);
+
+const population3 = percentageOfWorld1(populations[2]);
+
+const population4 = percentageOfWorld1(populations[populations.length - 1]);
+
+console.log(population1, population2, population3, population4);
+
+const percentages = [
+  percentageOfWorld1(populations[0]),
+  percentageOfWorld1(populations[1]),
+  percentageOfWorld1(populations[2]),
+  percentageOfWorld1(populations[populations.length - 1]),
+];
+console.log(percentages);
