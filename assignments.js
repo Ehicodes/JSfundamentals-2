@@ -74,20 +74,20 @@ which is about 18.2% of the world.'
 'percentageOfWorld1' you created earlier
 3. Call 'describePopulation' with data for 3 countries of your choice */
 
-function percentageOfWorld1(population) {
-  return (population / 7900) * 100;
-}
+// function percentageOfWorld1(population) {
+//   return (population / 7900) * 100;
+// }
 
-//function declaration
-function describePopulation(country, population) {
-  const percentageOfCountry = percentageOfWorld1(population);
-  const decription = `${country} has ${population} million people, which is about ${percentageOfCountry}% of the world`;
-  console.log(decription);
-}
+// //function declaration
+// function describePopulation(country, population) {
+//   const percentageOfCountry = percentageOfWorld1(population);
+//   const decription = `${country} has ${population} million people, which is about ${percentageOfCountry}% of the world`;
+//   console.log(decription);
+// }
 
-describePopulation("Brazil", 212.2);
-describePopulation("Argentina", 25.7);
-describePopulation("Canada", 37.7);
+// describePopulation("Brazil", 212.2);
+// describePopulation("Argentina", 25.7);
+// describePopulation("Canada", 37.7);
 
 //funcion expression
 // const describePopulation = function (country, population) {
@@ -110,3 +110,21 @@ describePopulation("Canada", 37.7);
 // const percCanada = describePopulation("Canada", 37.7);
 
 // console.log(percBrazil, percArgentina, percCanada);
+
+/* ASSIGNMENT 5. INTRO TO ARRAYS
+1. Create an array containing 4 population values of 4 countries of your choice.
+You may use the values you have been using previously. Store this array into a
+variable called 'populations'
+2. Log to the console whether the array has 4 elements or not (true or false)
+3. Create an array called 'percentages' containing the percentages of the
+world population for these 4 population values. Use the function
+'percentageOfWorld1' that you created earlier to compute the 4
+percentage values*/
+
+const populations = [212.2, 25.7, 37.7, 67.1];
+
+console.log(populations.length === 4);
+
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
