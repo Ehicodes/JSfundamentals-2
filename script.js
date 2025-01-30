@@ -141,21 +141,45 @@
 // console.log(ehi);
 
 // ARRAY EXERCISE
-const calAge = function (birthYear) {
-  return 2037 - birthYear;
-};
+// const calAge = function (birthYear) {
+//   return 2037 - birthYear;
+// };
 
-const years = [1990, 1967, 2002, 2010, 2018];
-const age1 = calAge(years[0]);
-const age2 = calAge(years[1]);
-const age3 = calAge(years[years.length - 1]);
+// const years = [1990, 1967, 2002, 2010, 2018];
+// const age1 = calAge(years[0]);
+// const age2 = calAge(years[1]);
+// const age3 = calAge(years[years.length - 1]);
 
-console.log(age1, age2, age3);
+// console.log(age1, age2, age3);
 
-const ages = [
-  calAge(years[0]),
-  calAge(years[1]),
-  calAge(years[years.length - 1]),
-];
+// const ages = [
+//   calAge(years[0]),
+//   calAge(years[1]),
+//   calAge(years[years.length - 1]),
+// ];
 
-console.log(ages);
+// console.log(ages);
+
+//USE METHODS IN ARRAYS
+///add elements
+const friends = ["Michael", "Steven", "Peter"];
+const newLength = friends.push("Jay");
+
+console.log(newLength);
+
+friends.unshift("Stella");
+
+//remove elements
+friends.pop();
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+
+friends.shift();
+console.log(friends);
+
+console.log(friends.indexOf("Steven"));
+
+if (friends.includes("Steven")) {
+  console.log("You have a friend called Steven");
+}
