@@ -171,4 +171,7 @@ const neighbours = ["Benin", "Chad", "Cameroon", "Niger"];
 // TASK 2
 neighbours.push("Utopia");
 
+// TASK 3
+neighbours.pop();
+
 console.log(neighbours);
