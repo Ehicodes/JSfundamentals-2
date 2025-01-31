@@ -105,6 +105,7 @@ the function you created before
 4. Bonus: Create an array 'total' containing the total values, so the bill + tip
 Test data: 125, 555 and 44 */
 
+//TASK 1
 const calcTip = function (billValue) {
   if (billValue >= 50 && billValue <= 300) {
     return billValue * 0.15;
@@ -115,3 +116,6 @@ const calcTip = function (billValue) {
 
 const test1 = calcTip(100);
 console.log(test1);
+
+//TASK 2
+const bills = [125, 555, 44];
