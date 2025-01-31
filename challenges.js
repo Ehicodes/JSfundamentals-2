@@ -122,9 +122,15 @@ const bills = [125, 555, 44];
 console.log(bills.length);
 
 //TASK 3
-const tips = [
-  calcTip(bills[0]),
-  calcTip(bills[bills.length - 1]),
-  calcTip(bills[2]),
-];
-console.log(tip1, tip2, tip3);
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+console.log(tips);
+
+//TASK 4
+const total =
+  bills[0] +
+  bills[1] +
+  bills[2] +
+  calcTip(bills[0]) +
+  calcTip(bills[bills.length - 1]) +
+  calcTip(bills[2]);
+console.log(total);
