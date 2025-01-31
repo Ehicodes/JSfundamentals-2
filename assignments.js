@@ -174,4 +174,10 @@ neighbours.push("Utopia");
 // TASK 3
 neighbours.pop();
 
+// TASK 4
+if (neighbours.includes("Germany")) {
+  console.log("A central European country :D");
+} else {
+  console.log("Probably not a central European country :D");
+}
 console.log(neighbours);
