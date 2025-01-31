@@ -121,31 +121,49 @@ world population for these 4 population values. Use the function
 'percentageOfWorld1' that you created earlier to compute the 4
 percentage values*/
 // TASK 1
-const populations = [212.2, 25.7, 37.7, 67.1];
+// const populations = [212.2, 25.7, 37.7, 67.1];
 
-//TASK 2
-console.log(populations.length === 4);
+// //TASK 2
+// console.log(populations.length === 4);
 
-//TASK 3
+// //TASK 3
 
-function percentageOfWorld1(population) {
-  return (population / 7900) * 100;
-}
+// function percentageOfWorld1(population) {
+//   return (population / 7900) * 100;
+// }
 
-const population1 = percentageOfWorld1(populations[0]);
+// // const population1 = percentageOfWorld1(populations[0]);
 
-const population2 = percentageOfWorld1(populations[1]);
+// // const population2 = percentageOfWorld1(populations[1]);
 
-const population3 = percentageOfWorld1(populations[2]);
+// // const population3 = percentageOfWorld1(populations[2]);
 
-const population4 = percentageOfWorld1(populations[populations.length - 1]);
+// // const population4 = percentageOfWorld1(populations[populations.length - 1]);
 
-console.log(population1, population2, population3, population4);
+// // console.log(population1, population2, population3, population4);
 
-const percentages = [
-  percentageOfWorld1(populations[0]),
-  percentageOfWorld1(populations[1]),
-  percentageOfWorld1(populations[2]),
-  percentageOfWorld1(populations[populations.length - 1]),
-];
-console.log(percentages);
+// const percentages = [
+//   percentageOfWorld1(populations[0]),
+//   percentageOfWorld1(populations[1]),
+//   percentageOfWorld1(populations[2]),
+//   percentageOfWorld1(populations[populations.length - 1]),
+// ];
+// console.log(percentages);
+
+/* ASSIGNMENT 6. Basic Array Operations (Methods).
+1. Create an array containing all the neighbouring countries of a country of your
+choice. Choose a country which has at least 2 or 3 neighbours. Store the array
+into a variable called 'neighbours'
+2. At some point, a new country called 'Utopia' is created in the neighbourhood of
+your selected country. So add it to the end of the 'neighbours' array
+3. Unfortunately, after some time, the new country is dissolved. So remove it from
+the end of the array
+4. If the 'neighbours' array does not include the country ‘Germany’, log to the
+console: 'Probably not a central European country :D'
+5. Change the name of one of your neighbouring countries. To do that, find the
+index of the country in the 'neighbours' array, and then use that index to
+change the array at that index position. For example, you can search for
+'Sweden' in the array, and then replace it with 'Republic of Sweden'. */
+
+//TASK 1
+const neighbours = ["Benin", "Chad", "Cameroon", "Niger"];
