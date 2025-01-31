@@ -119,3 +119,12 @@ console.log(test1);
 
 //TASK 2
 const bills = [125, 555, 44];
+console.log(bills.length);
+
+//TASK 3
+const tips = [
+  calcTip(bills[0]),
+  calcTip(bills[bills.length - 1]),
+  calcTip(bills[2]),
+];
+console.log(tip1, tip2, tip3);
