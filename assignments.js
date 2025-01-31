@@ -167,3 +167,8 @@ change the array at that index position. For example, you can search for
 
 //TASK 1
 const neighbours = ["Benin", "Chad", "Cameroon", "Niger"];
+
+// TASK 2
+neighbours.push("Utopia");
+
+console.log(neighbours);
