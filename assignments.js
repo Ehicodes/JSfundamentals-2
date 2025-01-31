@@ -179,4 +179,6 @@ if (!neighbours.includes("Germany")) {
   console.log("Probably not a central European country :D");
 }
 
+//TASK 5
+neighbours[neighbours.indexOf("German Kamerun")] = "Cameroon";
 console.log(neighbours);
