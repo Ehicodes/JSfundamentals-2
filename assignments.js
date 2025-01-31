@@ -166,7 +166,7 @@ change the array at that index position. For example, you can search for
 'Sweden' in the array, and then replace it with 'Republic of Sweden'. */
 
 //TASK 1
-const neighbours = ["Benin", "Chad", "Cameroon", "Niger"];
+const neighbours = ["Benin", "Chad", "German Kamerun", "Niger"];
 
 // TASK 2
 neighbours.push("Utopia");
@@ -175,9 +175,8 @@ neighbours.push("Utopia");
 neighbours.pop();
 
 // TASK 4
-if (neighbours.includes("Germany")) {
-  console.log("A central European country :D");
-} else {
+if (!neighbours.includes("Germany")) {
   console.log("Probably not a central European country :D");
 }
+
 console.log(neighbours);
