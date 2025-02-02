@@ -168,17 +168,31 @@ change the array at that index position. For example, you can search for
 //TASK 1
 const neighbours = ["Benin", "Chad", "German Kamerun", "Niger"];
 
-// TASK 2
-neighbours.push("Utopia");
+// // TASK 2
+// neighbours.push("Utopia");
 
-// TASK 3
-neighbours.pop();
+// // TASK 3
+// neighbours.pop();
 
-// TASK 4
-if (!neighbours.includes("Germany")) {
-  console.log("Probably not a central European country :D");
-}
+// // TASK 4
+// if (!neighbours.includes("Germany")) {
+//   console.log("Probably not a central European country :D");
+// }
 
-//TASK 5
-neighbours[neighbours.indexOf("German Kamerun")] = "Cameroon";
-console.log(neighbours);
+// //TASK 5
+// neighbours[neighbours.indexOf("German Kamerun")] = "Cameroon";
+// console.log(neighbours);
+
+/* ASSIGNMENT 7. INTRO TO OBJECTS.
+1. Create an object called 'myCountry' for a country of your choice, containing
+properties 'country', 'capital', 'language', 'population' and
+'neighbours' (an array like we used in previous assignments)*/
+const myCountry = {
+  country: "Nigeria",
+  capital: "Abuja",
+  languages: "Yoruba",
+  population: 223.8,
+  neighbours: ["Benin", "Chad", "German Kamerun", "Niger"],
+};
+
+console.log(myCountry);
