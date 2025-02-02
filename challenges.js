@@ -106,31 +106,52 @@ the function you created before
 Test data: 125, 555 and 44 */
 
 //TASK 1
+// const calcTip = function (billValue) {
+//   if (billValue >= 50 && billValue <= 300) {
+//     return billValue * 0.15;
+//   } else {
+//     return billValue * 0.2;
+//   }
+// };
+
+// const test1 = calcTip(100);
+// console.log(test1);
+
+// //TASK 2
+// const bills = [125, 555, 44];
+// console.log(bills.length);
+
+// //TASK 3
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// console.log(tips);
+
+// //TASK 4
+// const total =
+//   bills[0] +
+//   bills[1] +
+//   bills[2] +
+//   calcTip(bills[0]) +
+//   calcTip(bills[1]) +
+//   calcTip(bills[2]);
+// console.log(total);
+
+//TUTOR'S CODE. CORRECTION
 const calcTip = function (billValue) {
-  if (billValue >= 50 && billValue <= 300) {
-    return billValue * 0.15;
-  } else {
-    return billValue * 0.2;
-  }
+  return billValue >= 50 && billValue <= 300
+    ? billValue * 0.15
+    : billValue * 0.2; //tenary operator, so we do not repeat the condition
 };
 
-const test1 = calcTip(100);
-console.log(test1);
+const billValue = [125, 555, 44];
+const tips = [
+  calcTip(billValue[0]),
+  calcTip(billValue[1]),
+  calcTip(billValue[2]),
+];
 
-//TASK 2
-const bills = [125, 555, 44];
-console.log(bills.length);
-
-//TASK 3
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-console.log(tips);
-
-//TASK 4
-const total =
-  bills[0] +
-  bills[1] +
-  bills[2] +
-  calcTip(bills[0]) +
-  calcTip(bills[bills.length - 1]) +
-  calcTip(bills[2]);
-console.log(total);
+const totals = [
+  billValue[0] + tips[0],
+  billValue[1] + tips[1],
+  billValue[2] + tips[2],
+];
+console.log(billValue, tips, totals);
