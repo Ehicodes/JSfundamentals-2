@@ -162,24 +162,39 @@
 
 //USE METHODS IN ARRAYS
 ///add elements
-const friends = ["Michael", "Steven", "Peter"];
-const newLength = friends.push("Jay");
+// const friends = ["Michael", "Steven", "Peter"];
+// const newLength = friends.push("Jay");
 
-console.log(newLength);
+// console.log(newLength);
 
-friends.unshift("Stella");
+// friends.unshift("Stella");
 
-//remove elements
-friends.pop();
-const popped = friends.pop();
-console.log(popped);
-console.log(friends);
+// //remove elements
+// friends.pop();
+// const popped = friends.pop();
+// console.log(popped);
+// console.log(friends);
 
-friends.shift();
-console.log(friends);
+// friends.shift();
+// console.log(friends);
 
-console.log(friends.indexOf("Steven"));
+// console.log(friends.indexOf("Steven"));
 
-if (friends.includes("Steven")) {
-  console.log("You have a friend called Steven");
-}
+// if (friends.includes("Steven")) {
+//   console.log("You have a friend called Steven");
+// }*
+
+//INTRO TO OBJECTS(ANOTHER DATA STRUCTURE). IN OBJECTS, WE DEFINE KEY VALUE PAIRS.
+const ehisArray = {
+  firstName: "Ehi",
+  lastName: "Osaigbovo",
+  age: 2024 - 2006,
+  job: "Student",
+  friends: ["Michael", "Steven", "Josh"],
+}; //THE CURLY BRACES ARE TO DEFINE A NEW OBJECT. THE KEY IS THE VARIABLE NAME
+// SO WE HAVE AN OBJECT THAT CONTAINS 5 KEY VALUE PAIRS.
+// EACH OF THE KEYS ARE ALSO CALLED A PROPERTY. E.G PROPERTY firstName WITH THE VALUE OF Ehi
+//SO WE SAY THE ehisArray OBJECT HAS 5 PROPERTIES
+//THERE ARE MANY WAYS TO WRITE OBJECTS. USING THE CURLY BRACES IS CALLED THE OBJECT LITERAL SYNTAX.
+//THE BIG DIFF BETWEEN OBJECTS AND ARRAY IS THAT THE ORDER OF THE VALUES DOES NOT MATTER AT ALL WHEN WE WANT TO RETRIEVE THEM.
+//SINCE WE CAN ONLY ACCESS ARRAYS ELEMENTS THROUGH THEIR ORDER NUMBER, WE SHOULD USE ARRAYS FOR MORE ORDERED DATA AND OBJECTS FOR MORE UNSTRUCTED DATA
