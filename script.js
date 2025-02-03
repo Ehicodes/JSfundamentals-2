@@ -243,3 +243,8 @@ console.log(
   "and her best friend is",
   ehisArray["friends"][0]
 );
+
+// TUTOR CODE
+console.log(
+  `${ehisArray.firstName} has ${ehisArray.friends.length} friends, and her best friend is called ${ehisArray.friends[0]}`
+);
