@@ -201,33 +201,45 @@
 
 //DOT VS BRACKET NOTATION
 const ehisArray = {
-  firstName: "Ehi",
+  firstName: "Ehinomen",
   lastName: "Osaigbovo",
   age: 2024 - 2006,
   job: "Student",
   friends: ["Michael", "Steven", "Josh"],
 };
-console.log(ehisArray);
-console.log(ehisArray.firstName);
-console.log(ehisArray["firstName"]);
+// console.log(ehisArray);
+// console.log(ehisArray.firstName);
+// console.log(ehisArray["firstName"]);
 
 const nameKey = "Name";
 
-console.log(ehisArray["first" + nameKey]);
-console.log(ehisArray["last" + nameKey]);
+// console.log(ehisArray["first" + nameKey]);
+// console.log(ehisArray["last" + nameKey]);
 
-const interestedIn = prompt(
-  "What do you want to know about Ehinomen? Choose between firstName, lastName, age, job, and friends"
+// const interestedIn = prompt(
+//   "What do you want to know about Ehinomen? Choose between firstName, lastName, age, job, and friends"
+// );
+
+// if (ehisArray[interestedIn]) {
+//   console.log(ehisArray[interestedIn]);
+// } else {
+//   console.log(
+//     "Wrong request! Choose between firstName, lastName, age, job, and friends"
+//   );
+// }
+
+// ehisArray.location = "Lagos";
+// ehisArray["school"] = "LASU";
+// console.log(ehisArray);
+
+//CHALLENGE.
+// jonas  has 3 friends, and his best friend is called Michael
+
+console.log(
+  ehisArray["first" + nameKey],
+  "has",
+  ehisArray.friends.length,
+  "friends,",
+  "and her best friend is",
+  ehisArray["friends"][0]
 );
-
-if (ehisArray[interestedIn]) {
-  console.log(ehisArray[interestedIn]);
-} else {
-  console.log(
-    "Wrong request! Choose between firstName, lastName, age, job, and friends"
-  );
-}
-
-ehisArray.location = "Lagos";
-ehisArray["school"] = "LASU";
-console.log(ehisArray);
