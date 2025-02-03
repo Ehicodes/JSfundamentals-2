@@ -185,16 +185,49 @@
 // }*
 
 //INTRO TO OBJECTS(ANOTHER DATA STRUCTURE). IN OBJECTS, WE DEFINE KEY VALUE PAIRS.
-const ehisArray = {
-  firstName: "Ehi",
-  lastName: "Osaigbovo",
-  age: 2024 - 2006,
-  job: "Student",
-  friends: ["Michael", "Steven", "Josh"],
-}; //THE CURLY BRACES ARE TO DEFINE A NEW OBJECT. THE KEY IS THE VARIABLE NAME
+// const ehisArray = {
+//   firstName: "Ehi",
+//   lastName: "Osaigbovo",
+//   age: 2024 - 2006,
+//   job: "Student",
+//   friends: ["Michael", "Steven", "Josh"],
+// }; //THE CURLY BRACES ARE TO DEFINE A NEW OBJECT. THE KEY IS THE VARIABLE NAME
 // SO WE HAVE AN OBJECT THAT CONTAINS 5 KEY VALUE PAIRS.
 // EACH OF THE KEYS ARE ALSO CALLED A PROPERTY. E.G PROPERTY firstName WITH THE VALUE OF Ehi
 //SO WE SAY THE ehisArray OBJECT HAS 5 PROPERTIES
 //THERE ARE MANY WAYS TO WRITE OBJECTS. USING THE CURLY BRACES IS CALLED THE OBJECT LITERAL SYNTAX.
 //THE BIG DIFF BETWEEN OBJECTS AND ARRAY IS THAT THE ORDER OF THE VALUES DOES NOT MATTER AT ALL WHEN WE WANT TO RETRIEVE THEM.
 //SINCE WE CAN ONLY ACCESS ARRAYS ELEMENTS THROUGH THEIR ORDER NUMBER, WE SHOULD USE ARRAYS FOR MORE ORDERED DATA AND OBJECTS FOR MORE UNSTRUCTED DATA
+
+//DOT VS BRACKET NOTATION
+const ehisArray = {
+  firstName: "Ehi",
+  lastName: "Osaigbovo",
+  age: 2024 - 2006,
+  job: "Student",
+  friends: ["Michael", "Steven", "Josh"],
+};
+console.log(ehisArray);
+console.log(ehisArray.firstName);
+console.log(ehisArray["firstName"]);
+
+const nameKey = "Name";
+
+console.log(ehisArray["first" + nameKey]);
+console.log(ehisArray["last" + nameKey]);
+
+const interestedIn = prompt(
+  "What do you want to know about Ehinomen? Choose between firstName, lastName, age, job, and friends"
+);
+
+if (ehisArray[interestedIn]) {
+  console.log(ehisArray[interestedIn]);
+} else {
+  console.log(
+    "Wrong request! Choose between firstName, lastName, age, job, and friends"
+  );
+}
+
+ehisArray.location = "Lagos";
+ehisArray["school"] = "LASU";
+console.log(ehisArray);
