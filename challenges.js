@@ -136,22 +136,22 @@ Test data: 125, 555 and 44 */
 // console.log(total);
 
 //TUTOR'S CODE. CORRECTION
-const calcTip = function (billValue) {
-  return billValue >= 50 && billValue <= 300
-    ? billValue * 0.15
-    : billValue * 0.2; //tenary operator, so we do not repeat the condition
-};
+// const calcTip = function (billValue) {
+//   return billValue >= 50 && billValue <= 300
+//     ? billValue * 0.15
+//     : billValue * 0.2; //tenary operator, so we do not repeat the condition
+// };
 
-const billValue = [125, 555, 44];
-const tips = [
-  calcTip(billValue[0]),
-  calcTip(billValue[1]),
-  calcTip(billValue[2]),
-];
+// const billValue = [125, 555, 44];
+// const tips = [
+//   calcTip(billValue[0]),
+//   calcTip(billValue[1]),
+//   calcTip(billValue[2]),
+// ];
 
-const totals = [
-  billValue[0] + tips[0],
-  billValue[1] + tips[1],
-  billValue[2] + tips[2],
-];
-console.log(billValue, tips, totals);
+// const totals = [
+//   billValue[0] + tips[0],
+//   billValue[1] + tips[1],
+//   billValue[2] + tips[2],
+// ];
+// console.log(billValue, tips, totals);
