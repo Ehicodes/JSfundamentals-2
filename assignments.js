@@ -208,5 +208,11 @@ console.log(
   `${myCountry.country} has ${myCountry.population} million ${myCountry.languages}-speaking people,  ${myCountry.neighbours.length} neighbouring countries and a capital called, ${myCountry.capital}`
 );
 
-console.log(myCountry.population + 2);
-console.log(myCountry["population"] - 2);
+// console.log(myCountry.population + 2);
+// console.log(myCountry["population"] - 2);
+
+//tutor code
+myCountry.population += 2;
+console.log(myCountry);
+myCountry.population -= 2;
+console.log(myCountry);
