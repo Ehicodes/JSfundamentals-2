@@ -256,7 +256,7 @@ const ehisArray = {
   birthYear: 2006,
   job: "Student",
   friends: ["Michael", "Steven", "Josh"],
-  hasDriversLicense: true,
+  hasDriversLicense: false,
 
   calcAge: function () {
     this.age = 2025 - this.birthYear;
@@ -264,22 +264,15 @@ const ehisArray = {
   },
 
   getSummary: function () {
-    if (this.hasDriversLicense) {
-      console.log(
-        `${ehisArray.firstName} is a ${ehisArray.age}-year old ${ehisArray.job} and she has a driver's license`
-      );
-    } else {
-      console.log(
-        `${ehisArray.firstName} is a ${ehisArray.age}-year old ${ehisArray.job} and she has no  driver's license`
-      );
-    }
+    return `${this.firstName} is a ${ehisArray.calcAge()}-year old ${
+      this.job
+    }, and she has ${this.hasDriversLicense ? "a" : "no"} driver's license`;
   },
 };
 
 console.log(ehisArray.calcAge());
 console.log(ehisArray.age);
 console.log(ehisArray.getSummary());
-
 // console.log(ehisArray["calcAge"](1991));
 
 //SMALL CHALLENGE
