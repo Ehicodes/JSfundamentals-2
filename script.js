@@ -200,18 +200,18 @@
 //SINCE WE CAN ONLY ACCESS ARRAYS ELEMENTS THROUGH THEIR ORDER NUMBER, WE SHOULD USE ARRAYS FOR MORE ORDERED DATA AND OBJECTS FOR MORE UNSTRUCTED DATA
 
 //DOT VS BRACKET NOTATION
-const ehisArray = {
-  firstName: "Ehinomen",
-  lastName: "Osaigbovo",
-  age: 2024 - 2006,
-  job: "Student",
-  friends: ["Michael", "Steven", "Josh"],
-};
-// console.log(ehisArray);
-// console.log(ehisArray.firstName);
-// console.log(ehisArray["firstName"]);
+// const ehisArray = {
+//   firstName: "Ehinomen",
+//   lastName: "Osaigbovo",
+//   age: 2024 - 2006,
+//   job: "Student",
+//   friends: ["Michael", "Steven", "Josh"],
+// };
+// // console.log(ehisArray);
+// // console.log(ehisArray.firstName);
+// // console.log(ehisArray["firstName"]);
 
-const nameKey = "Name";
+// const nameKey = "Name";
 
 // console.log(ehisArray["first" + nameKey]);
 // console.log(ehisArray["last" + nameKey]);
@@ -235,16 +235,37 @@ const nameKey = "Name";
 //CHALLENGE.
 // jonas  has 3 friends, and his best friend is called Michael
 
-console.log(
-  ehisArray["first" + nameKey],
-  "has",
-  ehisArray.friends.length,
-  "friends,",
-  "and her best friend is",
-  ehisArray["friends"][0]
-);
+// console.log(
+//   ehisArray["first" + nameKey],
+//   "has",
+//   ehisArray.friends.length,
+//   "friends,",
+//   "and her best friend is",
+//   ehisArray["friends"][0]
+// );
 
-// TUTOR CODE
-console.log(
-  `${ehisArray.firstName} has ${ehisArray.friends.length} friends, and her best friend is called ${ehisArray.friends[0]}`
-);
+// // TUTOR CODE
+// console.log(
+//   `${ehisArray.firstName} has ${ehisArray.friends.length} friends, and her best friend is called ${ehisArray.friends[0]}`
+// )
+
+//OBJECT MODES
+const ehisArray = {
+  firstName: "Ehi",
+  lastName: "Osaigbovo",
+  birthYear: 2006,
+  job: "Student",
+  friends: ["Michael", "Steven", "Josh"],
+  hasDriversLicense: true,
+
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+};
+
+console.log(ehisArray.calcAge());
+console.log(ehisArray.age);
+// console.log(ehisArray["calcAge"](1991));
+
+//SMALL CHALLENGE
