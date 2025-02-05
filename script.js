@@ -259,13 +259,29 @@ const ehisArray = {
   hasDriversLicense: true,
 
   calcAge: function () {
-    this.age = 2037 - this.birthYear;
+    this.age = 2025 - this.birthYear;
     return this.age;
+  },
+
+  getSummary: function () {
+    if (this.hasDriversLicense) {
+      console.log(
+        `${ehisArray.firstName} is a ${ehisArray.age}-year old ${ehisArray.job} and she has a driver's license`
+      );
+    } else {
+      console.log(
+        `${ehisArray.firstName} is a ${ehisArray.age}-year old ${ehisArray.job} and she has no  driver's license`
+      );
+    }
   },
 };
 
 console.log(ehisArray.calcAge());
 console.log(ehisArray.age);
+console.log(ehisArray.getSummary());
+
 // console.log(ehisArray["calcAge"](1991));
 
 //SMALL CHALLENGE
+//create a method called getSummary that returns this string
+// "Ehi is a 19-year old teacher and she has a driver's license(if true but it not, she has no driver's license)"
