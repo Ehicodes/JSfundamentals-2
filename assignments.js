@@ -187,17 +187,17 @@ change the array at that index position. For example, you can search for
 // 1. Create an object called 'myCountry' for a country of your choice, containing
 // properties 'country', 'capital', 'language', 'population' and
 // 'neighbours' (an array like we used in previous assignments)*/
-const myCountry = {
-  country: "Nigeria",
-  capital: "Abuja",
-  languages: "Yoruba",
-  population: 223.8,
-  neighbours: ["Benin", "Chad", "Niger"],
+// const myCountry = {
+//   country: "Nigeria",
+//   capital: "Abuja",
+//   languages: "Yoruba",
+//   population: 223.8,
+//   neighbours: ["Benin", "Chad", "Niger"],
 
-  describe: function () {
-    return `${this.country} has ${this.population} million ${this.languages}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called, ${this.capital}`;
-  },
-};
+//   describe: function () {
+//     return `${this.country} has ${this.population} million ${this.languages}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called, ${this.capital}`;
+//   },
+// };
 
 // // console.log(myCountry);
 
@@ -232,6 +232,24 @@ method will set a new property on the object, called 'isIsland'.
 there are. Use the ternary operator to set the property. */
 
 //task 1
-console.log(myCountry.describe());
+const myCountry2 = {
+  country: "Nigeria",
+  capital: "Abuja",
+  languages: "Yoruba",
+  population: 223.8,
+  neighbours: ["Benin", "Chad", "Niger"],
+
+  describe: function () {
+    return `${this.country} has ${this.population} million ${this.languages}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called, ${this.capital}`;
+  },
+  checkIsland: function () {
+    this.isIsland = this.neighbours.length === 0 ? true : false;
+  },
+};
 
 //task 2
+myCountry2.describe();
+myCountry2.checkIsland();
+
+//task 3
+console.log(myCountry2);
