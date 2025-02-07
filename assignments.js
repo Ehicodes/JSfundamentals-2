@@ -231,4 +231,7 @@ method will set a new property on the object, called 'isIsland'.
 'isIsland' will be true if there are no neighbouring countries, and false if
 there are. Use the ternary operator to set the property. */
 
+//task 1
 console.log(myCountry.describe());
+
+//task 2
