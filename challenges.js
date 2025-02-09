@@ -178,7 +178,8 @@ const mark = {
   height: 1.69,
 
   calcBMI: function () {
-    return this.mass / (this.height * this.height);
+    this.bmiValue = this.mass / (this.height * this.height);
+    return this.bmiValue;
   },
 };
 
