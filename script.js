@@ -250,31 +250,65 @@
 // )
 
 //OBJECT MODES
-const ehisArray = {
-  firstName: "Ehi",
-  lastName: "Osaigbovo",
-  birthYear: 2006,
-  job: "Student",
-  friends: ["Michael", "Steven", "Josh"],
-  hasDriversLicense: false,
+// const ehisArray = {
+//   firstName: "Ehi",
+//   lastName: "Osaigbovo",
+//   birthYear: 2006,
+//   job: "Student",
+//   friends: ["Michael", "Steven", "Josh"],
+//   hasDriversLicense: false,
 
-  calcAge: function () {
-    this.age = 2025 - this.birthYear;
-    return this.age;
-  },
+//   calcAge: function () {
+//     this.age = 2025 - this.birthYear;
+//     return this.age;
+//   },
 
-  getSummary: function () {
-    return `${this.firstName} is a ${ehisArray.calcAge()}-year old ${
-      this.job
-    }, and she has ${this.hasDriversLicense ? "a" : "no"} driver's license`;
-  },
-};
+//   getSummary: function () {
+//     return `${this.firstName} is a ${this.calcAge()}-year old ${
+//       this.job
+//     }, and she has ${
+//       this.hasDriversLicense === true ? "a" : "no"
+//     } driver's license.`;
+//   },
+// };
 
-console.log(ehisArray.calcAge());
-console.log(ehisArray.age);
-console.log(ehisArray.getSummary());
-// console.log(ehisArray["calcAge"](1991));
+// console.log(ehisArray.calcAge());
+// console.log(ehisArray.age);
 
-//SMALL CHALLENGE
+// // console.log(ehisArray["calcAge"](1991));
+// console.log(ehisArray.getSummary());
+// //SMALL CHALLENGE
 //create a method called getSummary that returns this string
 // "Ehi is a 19-year old teacher and she has a driver's license(if true but it not, she has no driver's license)"
+
+//ARRAYS ARE OBJECTS TOO AND THEY HAVE METHODS WE CAN USE TO MANIPULATE THEM LIKE PUSH, SHIFT, POP, UNSHIFT AND MANY MIRE
+
+//WRITE IN YOUR NOTE
+//ITERATION: FOR THE LOOP LECTURE. ANOTHER CONTROL STRUCTURE. LOOPS ARE A FUNDAMENTAL ASPECT OF EVERY PROGRAMMING LANGUAGE BECAUSE THEY HELP US TO AUTMOATE REPETITIVE TASKS. TASKS WE HAVE TO PERFORM OVER AND OVER AGAIN.
+
+// console.log("Lifting weight repitition 1🏋🏻‍♀️");
+// console.log("Lifting weight repitition 2🏋🏻‍♀️");
+// console.log("Lifting weight repitition 3🏋🏻‍♀️");
+// console.log("Lifting weight repitition 4🏋🏻‍♀️");
+// console.log("Lifting weight repitition 5🏋🏻‍♀️");
+// console.log("Lifting weight repitition 6🏋🏻‍♀️");
+// console.log("Lifting weight repitition 7🏋🏻‍♀️");
+// console.log("Lifting weight repitition 8🏋🏻‍♀️");
+// console.log("Lifting weight repitition 9🏋🏻‍♀️");
+// console.log("Lifting weight repitition 10🏋🏻‍♀️");
+//instead of doing that, we can create a loop and put one of the lines of code in there and it will tun it over and over again till we tell it to stop
+//LETS IMPLEMENT A FOR LOOP THAT HAS A COUNTER.
+//a little bit like the if statement but that is for statement. a  loop statement has 3 parts .
+// 1st part:the initial value of a counter. in our example 1 to 10 . we started at 1 because that is our first repitition
+//we use semi colon to move to the next part. the second part is a logical condition that is  evaluated before each iteration of the loop, so before each time that the code in the looop is executed
+//increasing the counter is the third part. we update the counter after iteration, it is a must if not the counter will just stay at 1 forever, so we increase it
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weight repitition ${rep}🏋🏻‍♀️`);
+}
+
+//so the rep <= 10 conditon will be evaluated before the iteration of the loop. if it is true, the next loop iteration will run but if it is false, it will stop
+//for loop keps running while condition is true
+// instead of using rep = rep + 1. we can use the operator that adds 1 which is , ++
+
+//it will print the string 10 times
