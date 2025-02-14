@@ -204,11 +204,11 @@ const john = {
 console.log(mark, john);
 
 //TASK 2.
-console.log(mark.calcBMI());
-console.log(john.calcBMI());
+mark.calcBMI();
+john.calcBMI();
 
-// console.log(mark.bmiValue);
-// console.log(john.bmiValue);
+console.log(mark.bmiValue);
+console.log(john.bmiValue);
 
 // TASK 3.
 console.log(
