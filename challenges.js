@@ -207,12 +207,19 @@ console.log(mark, john);
 mark.calcBMI();
 john.calcBMI();
 
-console.log(mark.bmiValue);
-console.log(john.bmiValue);
+console.log(mark.bmiValue, john.bmiValue);
 
 // TASK 3.
-console.log(
-  `${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${
-    john.fullName
-  }'s BMI (${john.calcBMI()})!`
-);
+if (mark.bmiValue > john.bmiValue) {
+  console.log(
+    `${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${
+      john.fullName
+    }'s BMI (${john.calcBMI()})!`
+  );
+} else if (john.bmiValue > mark.bmiValue) {
+  console.log(
+    `${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${
+      mark.fullName
+    }'s BMI (${mark.calcBMI()})!`
+  );
+}
