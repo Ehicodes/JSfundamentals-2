@@ -163,6 +163,7 @@
 //USE METHODS IN ARRAYS
 ///add elements
 // const friends = ["Michael", "Steven", "Peter"];
+
 // const newLength = friends.push("Jay");
 
 // console.log(newLength);
@@ -303,12 +304,35 @@
 //we use semi colon to move to the next part. the second part is a logical condition that is  evaluated before each iteration of the loop, so before each time that the code in the looop is executed
 //increasing the counter is the third part. we update the counter after iteration, it is a must if not the counter will just stay at 1 forever, so we increase it
 
-for (let rep = 1; rep <= 10; rep++) {
-  console.log(`Lifting weight repitition ${rep}🏋🏻‍♀️`);
-}
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weight repitition ${rep}🏋🏻‍♀️`);
+// }
 
 //so the rep <= 10 conditon will be evaluated before the iteration of the loop. if it is true, the next loop iteration will run but if it is false, it will stop
 //for loop keps running while condition is true
 // instead of using rep = rep + 1. we can use the operator that adds 1 which is , ++
 
 //it will print the string 10 times
+
+//LOOPING ARRAYS,BREAKING AND CONTINUING
+//ONE OF THE MOST USE APPLICATIONS OF FOR LOOP IS TO LOOOP THROUGH ARRAYS
+const ehi = [
+  "Ehi",
+  "Osaigbovo",
+  2024 - 2006,
+  "Student",
+  ["Michael", "Peter", "Steven"],
+  true,
+];
+
+//LETS USE THE FOR LOOP TO LOOP THROUGH THE ARRAY. WE WANT TO INDIVIDUALLY LOG EVERY ELEMENT OF THE ARRAY TO THE CONSOLE.
+
+// console.log(ehi[0]);
+// console.log(ehi[1]);
+// console.log(ehi[2]);
+// console.log(ehi[3]);
+
+for (let i = 0; i < ehi.length; i++) {
+  console.log(ehi[i], typeof ehi[i]);
+}
+//WE ONLY READ VALUES FROM AN ARRAY
