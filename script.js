@@ -341,3 +341,16 @@ for (let i = 0; i < ehi.length; i++) {
 }
 
 console.log(types);
+
+//PRACTICAL EXAMPLE
+const years = [1991, 2007, 1969, 2020];
+
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  2037 - years[i];
+
+  ages.push(2037 - years[i]);
+}
+
+console.log(ages);
