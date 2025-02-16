@@ -324,7 +324,7 @@ const ehi = [
   ["Michael", "Peter", "Steven"],
   true,
 ];
-
+const types = []; //empty array
 //LETS USE THE FOR LOOP TO LOOP THROUGH THE ARRAY. WE WANT TO INDIVIDUALLY LOG EVERY ELEMENT OF THE ARRAY TO THE CONSOLE.
 
 // console.log(ehi[0]);
@@ -333,6 +333,10 @@ const ehi = [
 // console.log(ehi[3]);
 
 for (let i = 0; i < ehi.length; i++) {
-  console.log(ehi[i], typeof ehi[i]);
+  console.log(ehi[i], typeof ehi[i]); //WE ONLY READ VALUES FROM AN ARRAY
+
+  //NEW TYPES ARRAY
+  types[i] = typeof ehi[i]; //LETS USE THE LOOP TO CRREATE A NEW ARRRAY THAT WILL CONTAIN THE TYPE OF IST OF ELEMENTS (LEARN HOW TO CREATE AN ARRAY BASED ON THE VALUES OF ONE ORIGINAL ARRAY)
 }
-//WE ONLY READ VALUES FROM AN ARRAY
+
+console.log(types);
