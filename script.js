@@ -333,10 +333,11 @@ const types = []; //empty array
 // console.log(ehi[3]);
 
 for (let i = 0; i < ehi.length; i++) {
-  console.log(ehi[i], typeof ehi[i]); //WE ONLY READ VALUES FROM AN ARRAY
+  console.log(ehi[i], typeof ehi[i]); //WE ONLY READ VALUES FROM AN ARRAY. READING FROM AN ARRAY
 
-  //NEW TYPES ARRAY
-  types[i] = typeof ehi[i]; //LETS USE THE LOOP TO CRREATE A NEW ARRRAY THAT WILL CONTAIN THE TYPE OF IST OF ELEMENTS (LEARN HOW TO CREATE AN ARRAY BASED ON THE VALUES OF ONE ORIGINAL ARRAY)
+  //FILLING TYPES ARRAY. NEW TYPES ARRAY
+  // types[i] = typeof ehi[i]; //LETS USE THE LOOP TO CRREATE A NEW ARRRAY THAT WILL CONTAIN THE TYPE OF IST OF ELEMENTS (LEARN HOW TO CREATE AN ARRAY BASED ON THE VALUES OF ONE ORIGINAL ARRAY)
+  types.push(typeof ehi[i]); //ANOTHER WAY TO CREATE NEW ARRAYS
 }
 
 console.log(types);
