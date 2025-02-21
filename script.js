@@ -356,5 +356,11 @@ for (let i = 0; i < years.length; i++) {
 console.log(ages);
 
 //TWO IMPORTANT STATEMENTS FOR LOOPS.
-//CONTINUE = TO EXIT THE CURRENT ITERATION OF THE LOOP AND CONTINUE TO THE NEXT ONE
+//CONTINUE = TO EXIT THE CURRENT ITERATION OF THE LOOP AND CONTINUE TO THE NEXT ONE.
 //BREAK IS TO COMPLETELY TERMINATE THE WHOLE LOOP
+
+console.log("---ONLY STRINGS-----");
+for (let i = 0; i < ehi.length; i++) {
+  if (typeof ehi[i] !== "string") continue;
+  console.log(ehi[i], typeof ehi[i]);
+}
