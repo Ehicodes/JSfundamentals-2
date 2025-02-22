@@ -132,15 +132,15 @@ percentage values*/
 //   return (population / 7900) * 100;
 // }
 
-// // const population1 = percentageOfWorld1(populations[0]);
+// const population1 = percentageOfWorld1(populations[0]);
 
-// // const population2 = percentageOfWorld1(populations[1]);
+// const population2 = percentageOfWorld1(populations[1]);
 
-// // const population3 = percentageOfWorld1(populations[2]);
+// const population3 = percentageOfWorld1(populations[2]);
 
-// // const population4 = percentageOfWorld1(populations[populations.length - 1]);
+// const population4 = percentageOfWorld1(populations[populations.length - 1]);
 
-// // console.log(population1, population2, population3, population4);
+// console.log(population1, population2, population3, population4);
 
 // const percentages = [
 //   percentageOfWorld1(populations[0]),
@@ -260,6 +260,31 @@ Use a for loop to simulate the 50 people voting, by logging a string like this t
 the console (for numbers 1 to 50): 'Voter number 1 is currently voting'
 */
 
-for (let voter = 1; voter <= 50; voter++) {
-  console.log(`Voter number ${voter} is currently voting`);
+// for (let voter = 1; voter <= 50; voter++) {
+//   console.log(`Voter number ${voter} is currently voting`);
+// }
+
+/* ASSIGNMENT 11. Looping Arrays, Breaking and Continuing.
+1. Let's bring back the 'populations' array from a previous assignment
+2. Use a for loop to compute an array called 'percentages2' containing the
+percentages of the world population for the 4 population values. Use the
+function 'percentageOfWorld1' that you created earlier
+3. Confirm that 'percentages2' contains exactly the same values as the
+'percentages' array that we created manually in the previous assignment,
+and reflect on how much better this solution is */
+
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
 }
+//task 1
+const populations = [212.2, 25.7, 37.7, 67.1];
+const percentages2 = [];
+
+// //task 2
+// for (let i = 0; i < populations.length; i++) {
+//   console.log(populations[i]), percentageOfWorld1(populations[i]);
+
+//   percentages2.push(percentageOfWorld1(populations[i]));
+// }
+
+// console.log(percentages2);
