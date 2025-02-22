@@ -316,61 +316,61 @@
 
 //LOOPING ARRAYS,BREAKING AND CONTINUING
 //ONE OF THE MOST USE APPLICATIONS OF FOR LOOP IS TO LOOOP THROUGH ARRAYS
-const ehi = [
-  "Ehi",
-  "Osaigbovo",
-  2024 - 2006,
-  "Student",
-  ["Michael", "Peter", "Steven"],
-  true,
-];
-const types = []; //empty array
-//LETS USE THE FOR LOOP TO LOOP THROUGH THE ARRAY. WE WANT TO INDIVIDUALLY LOG EVERY ELEMENT OF THE ARRAY TO THE CONSOLE.
+// const ehi = [
+//   "Ehi",
+//   "Osaigbovo",
+//   2024 - 2006,
+//   "Student",
+//   ["Michael", "Peter", "Steven"],
+//   true,
+// ];
+// const types = []; //empty array
+// //LETS USE THE FOR LOOP TO LOOP THROUGH THE ARRAY. WE WANT TO INDIVIDUALLY LOG EVERY ELEMENT OF THE ARRAY TO THE CONSOLE.
 
-// console.log(ehi[0]);
-// console.log(ehi[1]);
-// console.log(ehi[2]);
-// console.log(ehi[3]);
+// // console.log(ehi[0]);
+// // console.log(ehi[1]);
+// // console.log(ehi[2]);
+// // console.log(ehi[3]);
 
-for (let i = 0; i < ehi.length; i++) {
-  console.log(ehi[i], typeof ehi[i]); //WE ONLY READ VALUES FROM AN ARRAY. READING FROM AN ARRAY
+// for (let i = 0; i < ehi.length; i++) {
+//   console.log(ehi[i], typeof ehi[i]); //WE ONLY READ VALUES FROM AN ARRAY. READING FROM AN ARRAY
 
-  //FILLING TYPES ARRAY. NEW TYPES ARRAY
-  // types[i] = typeof ehi[i]; //LETS USE THE LOOP TO CRREATE A NEW ARRRAY THAT WILL CONTAIN THE TYPE OF IST OF ELEMENTS (LEARN HOW TO CREATE AN ARRAY BASED ON THE VALUES OF ONE ORIGINAL ARRAY)
-  types.push(typeof ehi[i]); //ANOTHER WAY TO CREATE NEW ARRAYS
-}
+//   //FILLING TYPES ARRAY. NEW TYPES ARRAY
+//   // types[i] = typeof ehi[i]; //LETS USE THE LOOP TO CRREATE A NEW ARRRAY THAT WILL CONTAIN THE TYPE OF IST OF ELEMENTS (LEARN HOW TO CREATE AN ARRAY BASED ON THE VALUES OF ONE ORIGINAL ARRAY)
+//   types.push(typeof ehi[i]); //ANOTHER WAY TO CREATE NEW ARRAYS
+// }
 
-console.log(types);
+// console.log(types);
 
-//PRACTICAL EXAMPLE
-const years = [1991, 2007, 1969, 2020];
+// //PRACTICAL EXAMPLE
+// const years = [1991, 2007, 1969, 2020];
 
-const ages = [];
+// const ages = [];
 
-for (let i = 0; i < years.length; i++) {
-  2037 - years[i];
+// for (let i = 0; i < years.length; i++) {
+//   2037 - years[i];
 
-  ages.push(2037 - years[i]);
-}
+//   ages.push(2037 - years[i]);
+// }
 
-console.log(ages);
+// console.log(ages);
 
-//TWO IMPORTANT STATEMENTS FOR LOOPS.
-//CONTINUE = TO EXIT THE CURRENT ITERATION OF THE LOOP AND CONTINUE TO THE NEXT ONE.
-//BREAK IS TO COMPLETELY TERMINATE THE WHOLE LOOP
+// //TWO IMPORTANT STATEMENTS FOR LOOPS.
+// //CONTINUE = TO EXIT THE CURRENT ITERATION OF THE LOOP AND CONTINUE TO THE NEXT ONE.
+// //BREAK IS TO COMPLETELY TERMINATE THE WHOLE LOOP
 
-//CONTINUE
-console.log("---ONLY STRINGS-----");
-for (let i = 0; i < ehi.length; i++) {
-  if (typeof ehi[i] !== "string") continue; //if the type of the current value in the ehi array is not a string, the code will be true and the continue will exit the current iteration
-  console.log(ehi[i], typeof ehi[i]);
-}
+// //CONTINUE
+// console.log("---ONLY STRINGS-----");
+// for (let i = 0; i < ehi.length; i++) {
+//   if (typeof ehi[i] !== "string") continue; //if the type of the current value in the ehi array is not a string, the code will be true and the continue will exit the current iteration
+//   console.log(ehi[i], typeof ehi[i]);
+// }
 
-//BREAK //COMPLETELY TERMINATES THE LOOOP
+// //BREAK //COMPLETELY TERMINATES THE LOOOP
 
-//LETS LOG NO OTHER ELEMENT AS SOON AS WE FIND A NUMBER
-console.log("---ONLY NUMBER-----");
-for (let i = 0; i < ehi.length; i++) {
-  if (typeof ehi[i] == "number") break;
-  console.log(ehi[i], typeof ehi[i]);
-}
+// //LETS LOG NO OTHER ELEMENT AS SOON AS WE FIND A NUMBER
+// console.log("---ONLY NUMBER-----");
+// for (let i = 0; i < ehi.length; i++) {
+//   if (typeof ehi[i] == "number") break;
+//   console.log(ehi[i], typeof ehi[i]);
+// }
