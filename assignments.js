@@ -280,11 +280,11 @@ function percentageOfWorld1(population) {
 const populations = [212.2, 25.7, 37.7, 67.1];
 const percentages2 = [];
 
-// //task 2
-// for (let i = 0; i < populations.length; i++) {
-//   console.log(populations[i]), percentageOfWorld1(populations[i]);
+//task 2
+for (let i = 0; i < populations.length; i++) {
+  console.log(populations[i]), percentageOfWorld1(populations[i]);
 
-//   percentages2.push(percentageOfWorld1(populations[i]));
-// }
+  percentages2.push(percentageOfWorld1(populations[i]));
+}
 
-// console.log(percentages2);
+console.log(percentages2);
