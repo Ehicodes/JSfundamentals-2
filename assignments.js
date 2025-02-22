@@ -281,13 +281,24 @@ const populations = [212.2, 25.7, 37.7, 67.1];
 const percentages2 = [];
 
 //task 2
-for (let i = 0; i < populations.length; i++) {
-  console.log(populations[i]), percentageOfWorld1(populations[i]);
+// for (let i = 0; i < populations.length; i++) {
+//   console.log(populations[i]), percentageOfWorld1(populations[i]);
 
-  percentages2.push(percentageOfWorld1(populations[i]));
+//   percentages2.push(percentageOfWorld1(populations[i]));
+// }
+
+// console.log(percentages2);
+
+//task 3
+// it is more easier because using the loop, we do not have to manually change the population value in order for it to get calculated. we just had to use the for loop, input our function and put our current value "i". then we created our empty array and used the object method "push" to add the result to our empty array.
+
+//tutor code.
+//task 2
+for (let i = 0; i < populations.length; i++) {
+  const perc = percentageOfWorld1(populations[i]);
+  percentages2.push(perc);
 }
 
 console.log(percentages2);
 
-//task 3
-// it is more easier because using the loop, we do not have to manually change the population value in order for it to get calculated. we just had to use the for loop, input our function and put our current value "i". then we created our empty array and used the object method "push" to add the result to our empty array.
+//have a clear code !!(noted!)
