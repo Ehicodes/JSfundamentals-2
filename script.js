@@ -310,6 +310,7 @@
 
 //so the rep <= 10 conditon will be evaluated before the iteration of the loop. if it is true, the next loop iteration will run but if it is false, it will stop
 //for loop keps running while condition is true
+//the condition we need to write is telling JS in which condition the loop should keep running.0
 // instead of using rep = rep + 1. we can use the operator that adds 1 which is , ++
 
 //it will print the string 10 times
@@ -374,3 +375,23 @@
 //   if (typeof ehi[i] == "number") break;
 //   console.log(ehi[i], typeof ehi[i]);
 // }
+
+//LOOPING BACKWARDS AND LOOPS IN LOOPS
+const ehi = [
+  "Ehi",
+  "Osaigbovo",
+  2024 - 2006,
+  "Student",
+  ["Michael", "Peter", "Steven"],
+];
+
+// so initally, we looped from the begining. from index 0, 1, 2, 3, .., 4
+// for (let i = 0; i < ehi.length; i++) {
+//   console.log(ehi[i]);
+// }
+
+//but now we want to start at 4, then we go to 3 and all the way to 0 (looping backwards)
+
+for (let i = ehi.length - 1; i >= 0; i--) {
+  console.log(i, ehi[i]);
+}
