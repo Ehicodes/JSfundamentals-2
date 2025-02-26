@@ -383,6 +383,7 @@ const ehi = [
   2024 - 2006,
   "Student",
   ["Michael", "Peter", "Steven"],
+  true,
 ];
 
 // so initally, we looped from the begining. from index 0, 1, 2, 3, .., 4
@@ -394,4 +395,13 @@ const ehi = [
 
 for (let i = ehi.length - 1; i >= 0; i--) {
   console.log(i, ehi[i]);
+}
+
+//CREATE A LOOP INSIDE A LOOP
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`--------Starting exercise ${exercise}`);
+
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Exercise ${exercise}: Lifting weight repitition ${rep}`);
+  }
 }
