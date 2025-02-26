@@ -273,32 +273,51 @@ function 'percentageOfWorld1' that you created earlier
 'percentages' array that we created manually in the previous assignment,
 and reflect on how much better this solution is */
 
-function percentageOfWorld1(population) {
-  return (population / 7900) * 100;
-}
-//task 1
-const populations = [212.2, 25.7, 37.7, 67.1];
-const percentages2 = [];
+// function percentageOfWorld1(population) {
+//   return (population / 7900) * 100;
+// }
+// //task 1
+// const populations = [212.2, 25.7, 37.7, 67.1];
+// const percentages2 = [];
 
-//task 2
+// //task 2
+// // for (let i = 0; i < populations.length; i++) {
+// //   console.log(populations[i]), percentageOfWorld1(populations[i]);
+
+// //   percentages2.push(percentageOfWorld1(populations[i]));
+// // }
+
+// // console.log(percentages2);
+
+// //task 3
+// // it is more easier because using the loop, we do not have to manually change the population value in order for it to get calculated. we just had to use the for loop, input our function and put our current value "i". then we created our empty array and used the object method "push" to add the result to our empty array.
+
+// //tutor code.
+// //task 2
 // for (let i = 0; i < populations.length; i++) {
-//   console.log(populations[i]), percentageOfWorld1(populations[i]);
-
-//   percentages2.push(percentageOfWorld1(populations[i]));
+//   const perc = percentageOfWorld1(populations[i]);
+//   percentages2.push(perc);
 // }
 
 // console.log(percentages2);
 
-//task 3
-// it is more easier because using the loop, we do not have to manually change the population value in order for it to get calculated. we just had to use the for loop, input our function and put our current value "i". then we created our empty array and used the object method "push" to add the result to our empty array.
-
-//tutor code.
-//task 2
-for (let i = 0; i < populations.length; i++) {
-  const perc = percentageOfWorld1(populations[i]);
-  percentages2.push(perc);
-}
-
-console.log(percentages2);
-
 //have a clear code !!(noted!)
+
+/* ASSIGNMENT 12. Looping Backwards and Loops in Loops
+1. Store this array of arrays into a variable called 'listOfNeighbours'
+[['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden',
+'Russia']];
+2. Log only the neighbouring countries to the console, one by one, not the entire
+arrays. Log a string like 'Neighbour: Canada' for each country
+3. You will need a loop inside a loop for this. This is actually a bit tricky, so don't
+worry if it's too difficult for you! But you can still try to figure this out anyway 😉
+*/
+
+//TASK 1
+const listOfNeighbours = [
+  ["Canada", "Mexico"],
+  ["Spain"],
+  ["Norway", "Sweden", "Russia"],
+];
+
+console.log(listOfNeighbours);
