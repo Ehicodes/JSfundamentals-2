@@ -320,4 +320,39 @@ const listOfNeighbours = [
   ["Norway", "Sweden", "Russia"],
 ];
 
-console.log(listOfNeighbours);
+// console.log(listOfNeighbours.length);
+// console.log(listOfNeighbours[0][0]);
+
+//TASK 2
+
+for (let country = 0; country < 1; country++) {
+  console.log(`Neighbour: ${listOfNeighbours[0][0]}`);
+
+  for (let country = 0; country < 1; country++) {
+    console.log(`Neighbour: ${listOfNeighbours[0][1]}`);
+  }
+  for (let country = 0; country < 1; country++) {
+    console.log(`Neighbour: ${listOfNeighbours[1][0]}`);
+  }
+  for (let country = 0; country < 1; country++) {
+    console.log(`Neighbour: ${listOfNeighbours[2][0]}`);
+  }
+  for (let country = 0; country < 1; country++) {
+    console.log(`Neighbour: ${listOfNeighbours[2][1]}`);
+  }
+  for (let country = 0; country < 1; country++) {
+    console.log(`Neighbour: ${listOfNeighbours[2][2]}`);
+  }
+}
+// const ehi = [
+//   ["Ehi"],
+//   ["Osaigbovo"],
+//   2024 - 2006,
+//   "Student",
+//   ["Michael", "Peter", "Steven"],
+//   true,
+// ];
+
+// for (let all = 0; all < ehi.length; all++) {
+//   console.log(ehi[all]);
+// }
