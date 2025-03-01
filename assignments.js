@@ -324,7 +324,6 @@ const listOfNeighbours = [
 // console.log(listOfNeighbours[0][0]);
 
 //TASK 2
-
 for (let country = 0; country < 1; country++) {
   console.log(`Neighbour: ${listOfNeighbours[0][0]}`);
 
@@ -344,15 +343,8 @@ for (let country = 0; country < 1; country++) {
     console.log(`Neighbour: ${listOfNeighbours[2][2]}`);
   }
 }
-// const ehi = [
-//   ["Ehi"],
-//   ["Osaigbovo"],
-//   2024 - 2006,
-//   "Student",
-//   ["Michael", "Peter", "Steven"],
-//   true,
-// ];
 
-// for (let all = 0; all < ehi.length; all++) {
-//   console.log(ehi[all]);
-// }
+//TUTOR CODE
+for (let i = 0; i < listOfNeighbours.length; i++)
+  for (let y = 0; y < listOfNeighbours[i].length; y++)
+    console.log(`Neighbour: ${listOfNeighbours[i][y]}`);
