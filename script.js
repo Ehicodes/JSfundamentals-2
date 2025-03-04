@@ -377,31 +377,43 @@
 // }
 
 //LOOPING BACKWARDS AND LOOPS IN LOOPS
-const ehi = [
-  "Ehi",
-  "Osaigbovo",
-  2024 - 2006,
-  "Student",
-  ["Michael", "Peter", "Steven"],
-  true,
-];
+// const ehi = [
+//   "Ehi",
+//   "Osaigbovo",
+//   2024 - 2006,
+//   "Student",
+//   ["Michael", "Peter", "Steven"],
+//   true,
+// ];
 
-// so initally, we looped from the begining. from index 0, 1, 2, 3, .., 4
-// for (let i = 0; i < ehi.length; i++) {
-//   console.log(ehi[i]);
+// // so initally, we looped from the begining. from index 0, 1, 2, 3, .., 4
+// // for (let i = 0; i < ehi.length; i++) {
+// //   console.log(ehi[i]);
+// // }
+
+// //but now we want to start at 4, then we go to 3 and all the way to 0 (looping backwards)
+
+// for (let i = ehi.length - 1; i >= 0; i--) {
+//   console.log(i, ehi[i]);
 // }
 
-//but now we want to start at 4, then we go to 3 and all the way to 0 (looping backwards)
+// //CREATE A LOOP INSIDE A LOOP
+// for (let exercise = 1; exercise < 4; exercise++) {
+//   console.log(`--------Starting exercise ${exercise}`);
 
-for (let i = ehi.length - 1; i >= 0; i--) {
-  console.log(i, ehi[i]);
-}
+//   for (let rep = 1; rep < 6; rep++) {
+//     console.log(`Exercise ${exercise}: Lifting weight repitition ${rep}`);
+//   }
+// }
 
-//CREATE A LOOP INSIDE A LOOP
-for (let exercise = 1; exercise < 4; exercise++) {
-  console.log(`--------Starting exercise ${exercise}`);
+//THE WHILE LOOP
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weight repitition ${rep}🏋🏻‍♀️`);
+// } // for loop
 
-  for (let rep = 1; rep < 6; rep++) {
-    console.log(`Exercise ${exercise}: Lifting weight repitition ${rep}`);
-  }
-}
+// console.log("-------while loop-----");
+// let rep = 1;
+// while (rep <= 10) {
+//   console.log(`Lifting weight repitition ${rep}🏋🏻‍♀️`);
+//   rep++;
+// }
