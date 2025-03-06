@@ -243,4 +243,16 @@ const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 const tips = [];
 const totals = [];
 
-//TASK 3
+//TASK 3.
+const calcTip = function (billValue) {
+  return billValue >= 50 && billValue <= 300
+    ? billValue * 0.15
+    : billValue * 0.2;
+};
+
+for (tipsValue = 0; tipsValue < bills.length; tipsValue++) {
+  const tipsAmount = calcTip(bills[tipsValue]);
+  tips.push(calcTip(bills[tipsValue]));
+}
+
+console.log(tips);
