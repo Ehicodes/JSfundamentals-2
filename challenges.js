@@ -238,3 +238,9 @@ tips and totals arrays 😉 */
 
 // TASK 1.
 const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+//TASK 2.
+const tips = [];
+const totals = [];
+
+//TASK 3
