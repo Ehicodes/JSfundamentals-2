@@ -420,13 +420,13 @@
 
 //EXAMPLE THAT DOES NOT DEPEND ON A COUNTER BUT INSTEAD ON A RANDOM VARIABLE
 
-let dice = Math.trunc(Math.random() * 6) + 1; // the loop will run forever (an infinite loop)
-while (dice !== 6) {
-  //we want to keep running the loop as long as the dice is different from 6. when it is 6, the loop should stop
+// let dice = Math.trunc(Math.random() * 6) + 1; // the loop will run forever (an infinite loop)
+// while (dice !== 6) {
+//   //we want to keep running the loop as long as the dice is different from 6. when it is 6, the loop should stop
 
-  let dice = Math.trunc(Math.random() * 6) + 1; // by doing this, we will create new  dice values. we will reassign the value at the end of each
-  console.log(`you rolled a ${dice}`);
-  if (dice === 6) console.log("loop is about to end");
-}
+//   let dice = Math.trunc(Math.random() * 6) + 1; // by doing this, we will create new  dice values. we will reassign the value at the end of each
+//   console.log(`you rolled a ${dice}`);
+//   if (dice === 6) console.log("loop is about to end");
+// }
 
 //THE WHILE LOOP DOES NOT DEPEND ON ANY COUNTER.  YOU CAN USE WHEN YOU DO NOT KNOW BEFORE HAND HOW MANY ITERATIONS THE LOOP WILL HAVE

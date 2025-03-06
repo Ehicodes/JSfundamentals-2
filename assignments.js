@@ -314,37 +314,61 @@ worry if it's too difficult for you! But you can still try to figure this out an
 */
 
 //TASK 1
-const listOfNeighbours = [
-  ["Canada", "Mexico"],
-  ["Spain"],
-  ["Norway", "Sweden", "Russia"],
-];
+// const listOfNeighbours = [
+//   ["Canada", "Mexico"],
+//   ["Spain"],
+//   ["Norway", "Sweden", "Russia"],
+// ];
 
-// console.log(listOfNeighbours.length);
-// console.log(listOfNeighbours[0][0]);
+// // console.log(listOfNeighbours.length);
+// // console.log(listOfNeighbours[0][0]);
 
-//TASK 2
-for (let country = 0; country < 1; country++) {
-  console.log(`Neighbour: ${listOfNeighbours[0][0]}`);
+// //TASK 2
+// for (let country = 0; country < 1; country++) {
+//   console.log(`Neighbour: ${listOfNeighbours[0][0]}`);
 
-  for (let country = 0; country < 1; country++) {
-    console.log(`Neighbour: ${listOfNeighbours[0][1]}`);
-  }
-  for (let country = 0; country < 1; country++) {
-    console.log(`Neighbour: ${listOfNeighbours[1][0]}`);
-  }
-  for (let country = 0; country < 1; country++) {
-    console.log(`Neighbour: ${listOfNeighbours[2][0]}`);
-  }
-  for (let country = 0; country < 1; country++) {
-    console.log(`Neighbour: ${listOfNeighbours[2][1]}`);
-  }
-  for (let country = 0; country < 1; country++) {
-    console.log(`Neighbour: ${listOfNeighbours[2][2]}`);
-  }
+//   for (let country = 0; country < 1; country++) {
+//     console.log(`Neighbour: ${listOfNeighbours[0][1]}`);
+//   }
+//   for (let country = 0; country < 1; country++) {
+//     console.log(`Neighbour: ${listOfNeighbours[1][0]}`);
+//   }
+//   for (let country = 0; country < 1; country++) {
+//     console.log(`Neighbour: ${listOfNeighbours[2][0]}`);
+//   }
+//   for (let country = 0; country < 1; country++) {
+//     console.log(`Neighbour: ${listOfNeighbours[2][1]}`);
+//   }
+//   for (let country = 0; country < 1; country++) {
+//     console.log(`Neighbour: ${listOfNeighbours[2][2]}`);
+//   }
+// }
+
+// //TUTOR CODE
+// for (let i = 0; i < listOfNeighbours.length; i++)
+//   for (let y = 0; y < listOfNeighbours[i].length; y++)
+//     console.log(`Neighbour: ${listOfNeighbours[i][y]}`);
+
+/* ASSIGNMENT 13.The while Loop
+1. Recreate the challenge from the lecture 'Looping Arrays, Breaking and Continuing',
+but this time using a while loop (call the array 'percentages3')
+2. Reflect on what solution you like better for this task: the for loop or the while
+loop? */
+
+//TASK 1
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
 }
 
-//TUTOR CODE
-for (let i = 0; i < listOfNeighbours.length; i++)
-  for (let y = 0; y < listOfNeighbours[i].length; y++)
-    console.log(`Neighbour: ${listOfNeighbours[i][y]}`);
+const populations = [212.2, 25.7, 37.7, 67.1];
+const percentages3 = [];
+
+let i = 0;
+while (i < populations.length) {
+  const perc = percentageOfWorld1(populations[i]);
+  percentages3.push(perc);
+  i++;
+}
+console.log(percentages3);
+
+//TASK 2. I PREFER THE FOR  LOOP FOR THIS TASK. I FEEL IT'S MORE STRAIGHTFORWAD.
