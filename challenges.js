@@ -171,55 +171,70 @@ respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
 Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m
 tall. */
 
-//TASK 1.
-const mark = {
-  fullName: "Mark Miller",
-  mass: 78,
-  height: 1.69,
+// //TASK 1.
+// const mark = {
+//   fullName: "Mark Miller",
+//   mass: 78,
+//   height: 1.69,
 
-  calcBMI: function () {
-    this.bmiValue = this.mass / (this.height * this.height);
-    return this.bmiValue;
-  },
-  // calcBMI: function () {
-  //   return this.mass / (this.height * this.height);
-  // },
-};
+//   calcBMI: function () {
+//     this.bmiValue = this.mass / (this.height * this.height);
+//     return this.bmiValue;
+//   },
+//   // calcBMI: function () {
+//   //   return this.mass / (this.height * this.height);
+//   // },
+// };
 
-const john = {
-  fullName: "John Smith",
-  mass: 92,
-  height: 1.95,
+// const john = {
+//   fullName: "John Smith",
+//   mass: 92,
+//   height: 1.95,
 
-  // calcBMI: function () {
-  //   return this.mass / (this.height * this.height);
-  // },
+//   // calcBMI: function () {
+//   //   return this.mass / (this.height * this.height);
+//   // },
 
-  calcBMI: function () {
-    this.bmiValue = this.mass / (this.height * this.height);
-    return this.bmiValue;
-  },
-};
+//   calcBMI: function () {
+//     this.bmiValue = this.mass / (this.height * this.height);
+//     return this.bmiValue;
+//   },
+// };
 
-console.log(mark, john);
+// console.log(mark, john);
 
-//TASK 2.
-mark.calcBMI();
-john.calcBMI();
+// //TASK 2.
+// mark.calcBMI();
+// john.calcBMI();
 
-console.log(mark.bmiValue, john.bmiValue);
+// console.log(mark.bmiValue, john.bmiValue);
 
-// TASK 3.
-if (mark.bmiValue > john.bmiValue) {
-  console.log(
-    `${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${
-      john.fullName
-    }'s BMI (${john.calcBMI()})!`
-  );
-} else if (john.bmiValue > mark.bmiValue) {
-  console.log(
-    `${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${
-      mark.fullName
-    }'s BMI (${mark.calcBMI()})!`
-  );
-}
+// // TASK 3.
+// if (mark.bmiValue > john.bmiValue) {
+//   console.log(
+//     `${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${
+//       john.fullName
+//     }'s BMI (${john.calcBMI()})!`
+//   );
+// } else if (john.bmiValue > mark.bmiValue) {
+//   console.log(
+//     `${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${
+//       mark.fullName
+//     }'s BMI (${mark.calcBMI()})!`
+//   );
+// }
+
+/* CODING CHALLENGE 4.
+Let's improve Steven's tip calculator even more, this time using loops!
+Your tasks:
+1. Create an array 'bills' containing all 10 test bill values
+2. Create empty arrays for the tips and the totals ('tips' and 'totals')
+3. Use the 'calcTip' function we wrote before (no need to repeat) to calculate
+tips and total values (bill + tip) for every bill value in the bills array. Use a for
+loop to perform the 10 calculations!
+Test data: 22, 295, 176, 440, 37, 105, 10, 1100, 86 and 52
+Hints: Call ‘calcTip ‘in the loop and use the push method to add values to the
+tips and totals arrays 😉 */
+
+// TASK 1.
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
