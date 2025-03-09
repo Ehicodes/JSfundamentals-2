@@ -250,9 +250,16 @@ const calcTip = function (billValue) {
     : billValue * 0.2;
 };
 
-for (tipsValue = 0; tipsValue < bills.length; tipsValue++) {
-  const tipsAmount = calcTip(bills[tipsValue]);
-  tips.push(calcTip(bills[tipsValue]));
+//TIPS AND TOTAL VALUES
+for (let billValue = 0; billValue < bills.length; billValue++) {
+  const tipsCalculation = calcTip(bills[billValue]);
+  //TIP VALUES
+  tips.push(calcTip(bills[billValue]));
+
+  //TOTAL VALUES
+  totals.push(tipsCalculation + bills[billValue]);
 }
 
+console.log(bills);
 console.log(tips);
+console.log(totals);
